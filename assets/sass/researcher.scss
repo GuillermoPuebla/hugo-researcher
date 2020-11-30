@@ -6,13 +6,13 @@ $y-medium: 1.0rem;
 
 // Placeholders
 %link-default {
-    color: $red;
+    color: $blue;
     text-decoration: none;
     & * {
-        color: $red;
+        color: $blue;
     }
     &:hover {
-        color: $red;
+        color: $blue;
         text-decoration: underline;
     }
 }
@@ -36,7 +36,7 @@ $y-medium: 1.0rem;
 // Style
 * {
     color: $black;
-    font-family: "Inconsolata";
+    font-family: "Palatino Linotype";
     line-height: 1.2;
 }
 .container {
@@ -45,6 +45,8 @@ $y-medium: 1.0rem;
 .navbar-brand {
     @extend %link-dark;
     font-size: 2rem;
+    font-variant-caps: small-caps;
+    // margin-bottom: -0.2em;
 }
 .nav-link {
     @extend %link-default;
@@ -58,7 +60,7 @@ $y-medium: 1.0rem;
     }
     h1, h2, h3, h4, h5, h6 {
         font-size: medium;
-        font-weight: bold;
+        font-weight: normal;
         margin: $y-medium 0 $y-small 0;
     }
     @for $i from 1 through 4 {
@@ -72,8 +74,8 @@ $y-medium: 1.0rem;
     }
     .avatar > img {
         border-radius: 50%;
-        float: right;
-        margin: -8px 0 0 16px;
+        float: left;
+        margin: 0px 20px 0px 0px;
         height: $avatar-size;
         width: $avatar-size;
     }
